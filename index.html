@@ -15,12 +15,13 @@
 
       <div>
         <button id="toggleButton">
-          <img src="./img/menu.svg" class="nav_img" />
+          <img src="./img/menu.png" class="nav_img" />
         </button>
 
         <ul id="menu" style="display: none" class="menu">
           <a href="./index.html">Inicio</a>
           <a href="./historia.html">Sobre nosotros</a>
+          <a href="">Galeria</a>
           <a href="./contacto.html">Contacto</a>
           <a href="./crp1.html">CRP informacion</a>
         </ul>
@@ -45,7 +46,7 @@
         <h1>Nixon Mejias Romero</h1>
         <span></span>
       </div>
-      <button>Contacto</button>
+      <button><a href="./contacto.html">Contacto</a> </button>
     </main>
     <div class="Links_social">
       <div class="slide-in-fwd-bottom"><img src="./Img/ic--baseline-whatsapp.png" alt="whatsapp" srcset="" /></div>
@@ -167,16 +168,41 @@
     <section class="History_Main-container">
      <div>
       <h2>"Nuestra historia esencia de nuestra misión" </h2>
+         <p>La U.E. Nixon Mejías Romero nace como alternativa 
+          en la Educación Formal Privada el 01 de Octubre de 1997
+           en la localidad de San Rafael de El Mojan, capital
+            del Municipio Autónomo Mara, no solo para albergar...</p>
           <button>Leer sobre nosotros</button>
     </div>
     </section>
-    
+    <section class="Fqt_section">
+      <h2>Preguntas frecuentes</h2>
+      <div>
+         <details name="fqt">
+        <summary>Cuando comienzan las clases</summary>
+             los comienzo de las inscriciones seran avisada por las redes sociales 
+      </details>
+      <details name="fqt">
+        <summary>Cuando comienzan las clases</summary>
+             los comienzo de las inscriciones seran avisada por las redes sociales 
+      </details>
+      <details name="fqt">
+        <summary>Cuando comienzan las clases</summary>
+             los comienzo de las inscriciones seran avisada por las redes sociales 
+      </details>
+      <details name="fqt">
+        <summary>Cuando comienzan las clases</summary>
+             los comienzo de las inscriciones seran avisada por las redes sociales 
+      </details>
+      </div>
+     
+    </section>
     <footer>
       <p>Nixon Mejias Romero</p>
       <div class="Footer_Mid-Container">
         <div>
                <span>Redes</span>
-             <a href="">Instagram</a>
+             <a href="https://www.instagram.com/uenixonmejias/">Instagram</a>
              <a href="">whatsapp</a>
              <a href="">Facebook</a>
         </div> 
@@ -194,5 +220,15 @@
     </footer>
 
     <script src="js/menu.js"></script>
+    <script>
+      document.getElementById("toggleButton").addEventListener("click", function() {
+    var menu = document.getElementById("menu");
+    if (menu.style.display === "none") {
+      menu.style.display = "flex";
+    } else {
+      menu.style.display = "none";
+    }
+  });
+  </script>
   </body>
 </html>

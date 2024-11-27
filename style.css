@@ -28,9 +28,8 @@ body {
 header {
   position: fixed;
   width: 100%;
- 
+  z-index: 1000;
 }
-
 .img-container img {
   width: 6rem;
   margin: 1rem;
@@ -94,7 +93,7 @@ header {
 }
 .menu {
   display: none;
-  background: #010101ed;
+  background: #010101;
   border: transparent;
   width: 100%;
   height: 100svh;
@@ -108,15 +107,18 @@ header {
   padding-top: 10rem;
   left: 0;
   margin: 0;
+  z-index: 7;
 }
 #toggleButton {
   display: none;
-  background: transparent;
+  background: #007401;
   border: transparent;
   z-index: 10;
   position: absolute;
   top: 3rem;
   right: 3rem;
+  padding: .3rem;
+  border-radius: 1rem;
 }
 @media (max-width: 600px) {
   #toggleButton {
@@ -143,7 +145,7 @@ main {
   display: flex;
   align-items: center;
   flex-direction: column;
-  z-index: 10;
+  z-index: -2;
 }
 .Main_Text-Center-Container p {
   opacity: 0.5;
@@ -162,6 +164,11 @@ main button {
   border-color: white;
   animation: MainButton 2s ease 1s 1 normal forwards;
   opacity: 0;
+  
+}
+main button a{
+text-decoration: none;
+color: white;
 }
 .Links_social {
   display: flex;
@@ -169,6 +176,7 @@ main button {
   margin: 1rem;
   justify-content: center;
   margin-top: 4rem;
+  z-index: 12;
 }
 .Links_social div {
   display: flex;
@@ -177,6 +185,7 @@ main button {
   height: 3rem;
   border-radius: 100%;
   border: solid 2px white;
+  z-index: -1;
 }
 /*Main animate*/
 @keyframes backgroundanimate {
@@ -607,14 +616,39 @@ section.Section_Galery-Container {
   text-align: center;
   font-size: 2rem;
 }
+.History_Main-container p {
+  font-size: 1rem;
+  font-weight: 300;
+  margin: 3rem;
+}
 .History_Main-container button {
   background: transparent;
   font-size: 1.3rem;
   color: #f0f0f0;
-  padding: 1rem 3rem;
+  padding: .5rem 2rem;
   border-radius: 21px;
+  border-color: white;
+  font-family: 'DM Sans';
+  font-weight: 200;
 }
-
+/* FQT */
+.Fqt_section {
+  color: white;
+  background: #8080800a;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 5rem 0;
+  display: flex;
+}
+.Fqt_section details {
+  border: solid 1px white;
+  margin: 2rem;
+  padding: 1.5rem;
+  border-radius: 12px;
+  background: #13131300;
+  color: #ffffff8a;
+}
 /* FOOTER*/
 footer {
   color: #f0f0f0;
@@ -649,6 +683,7 @@ footer > p {
 
 .Footer_Ubi span {
   font-weight: 900;
+  margin: 1rem;
 }
 .Footer_Down-Container {
   color: #f0f0f066;

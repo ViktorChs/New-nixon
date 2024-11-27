@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contacto.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="nav container">
+        <a href="./index.html" class="nav_links">Inicio</a>
+        <a href="./historia.html" class="nav_links">Sobre nosotros</a>
+    <picture class="logo__tittle">
+        <img src="images/LOGO NMR.png" alt="logo">
+    </picture>
+        <a href="./contacto.html" class="nav_links">Contactanos</a>
+        <a href="./crp1.html" class="nav_links">Grupos CRP</a>
+
+        <button id="toggleButton"><img src="./images/menu.svg" class="nav_img"></button>
+
+        <ul id="menu" style="display: none;" class="menu">
+        <a href="./index.html">Inicio</a>
+        <a href="./historia.html">Sobre nosotros</a>
+        <a href="./contacto.html">Contacto</a>
+        <a href="./crp1.html">CRP informacion</a>
+        </ul>
+</nav>
+    <section id="contact" class="s-contact">
+
+        <div class="overlay"></div>
+        <div class="contact__line"></div>
+
+        <div class="row section-header aos-init aos-animate" data-aos="fade-up">
+            <div class="col-full">
+                <h3 class="subhead">Contactanos</h3>
+                <h1 class="display-2 display-2--light">Puedes contactar con nosotros a traves de nuestros metodos online o dirigir directamente a nuestro plantel</h1>
+            </div>
+        </div>
+
+        <div class="row contact-content aos-init aos-animate" data-aos="fade-up">
+            
+            <div class="contact-primary">
+
+
+                <div class="mapa"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d516.0420746486392!2d-71.73070938456283!3d10.95940480176373!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e896fd893a320ff%3A0xe7ad6652d123d1b8!2sU.%20E.P.%20Nixon%20Mejias%20Romero!5e1!3m2!1ses-419!2snl!4v1706480464341!5m2!1ses-419!2snl"  style="border:0;" allowfullscreen="" loading="lazy"    class="ubicacion-image" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+
+
+               
+
+            </div> <!-- end contact-primary -->
+
+            <div class="contact-secondary">
+                <div class="contact-info">
+
+                    <h3 class="h6 hide-on-fullwidth">Contact Info</h3>
+
+                    <div class="cinfo">
+                        <h5>Ubicanos</h5>
+                        <p>
+                            X759+QPH, C. 23,<br> 
+                            San Rafael de El Moján 4044, Zulia<br>
+                        </p>
+                    </div>
+
+                    <div class="cinfo">
+                        <h5>Correo electronico</h5>
+                        <p>
+                            contact@glintsite.com<br>
+                            info@glintsite.com
+                        </p>
+                    </div>
+
+                    <div class="cinfo">
+                        <h5>Telefono</h5>
+                        <p>
+                            Phone: 04146247601<br>
+                            
+                        </p>
+                    </div>
+
+                    <ul class="contact-social">
+                        <li>
+                            <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-behance" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
+                        </li>
+                    </ul> <!-- end contact-social -->
+
+                </div> <!-- end contact-info -->
+            </div> <!-- end contact-secondary -->
+
+        </div> <!-- end contact-content -->
+
+    </section>
+    <script>
+        document.getElementById("toggleButton").addEventListener("click", function() {
+      var menu = document.getElementById("menu");
+      if (menu.style.display === "none") {
+        menu.style.display = "flex";
+      } else {
+        menu.style.display = "none";
+      }
+    });
+    </script>
+</body>
+</html>
