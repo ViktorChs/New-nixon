@@ -5,27 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="contacto.css">
+    <link rel="stylesheet" href="Menu.css" />
+
     <title>Document</title>
 </head>
 <body>
-    <nav class="nav container">
-        <a href="./index.html" class="nav_links">Inicio</a>
-        <a href="./historia.html" class="nav_links">Sobre nosotros</a>
-    <picture class="logo__tittle">
-        <img src="images/LOGO NMR.png" alt="logo">
-    </picture>
-        <a href="./contacto.html" class="nav_links">Contactanos</a>
-        <a href="./crp1.html" class="nav_links">Grupos CRP</a>
-
-        <button id="toggleButton"><img src="./images/menu.svg" class="nav_img"></button>
-
-        <ul id="menu" style="display: none;" class="menu">
-        <a href="./index.html">Inicio</a>
-        <a href="./historia.html">Sobre nosotros</a>
-        <a href="./contacto.html">Contacto</a>
-        <a href="./crp1.html">CRP informacion</a>
-        </ul>
-</nav>
+    <header>
+        <div class="img-container">
+          <img src="./Img/LOGO.png" alt="" srcset="" />
+        </div>
+  
+        <div>
+          <button id="toggleButton">
+            <img src="./img/menu.png" class="nav_img" />
+          </button>
+  
+          <ul id="menu" style="display: none" class="menu">
+            <a href="./index.html">Inicio</a>
+            <a href="./historia.html">Sobre nosotros</a>
+            <a href="">Galeria</a>
+            <a href="./contacto.html">Contacto</a>
+            <a href="./crp1.html">CRP informacion</a>
+          </ul>
+        </div>
+        <div class="links-container">
+          <a href="./index.html">Inicio</a>
+          <a href="./historia.html">Sobre nosotros</a>
+          <a href="">Galeria</a>
+          <a href="./contacto.html">Contacto</a>
+          <a href="./crp1.html">CRP informacion</a>
+        </div>
+      </header>
     <section id="contact" class="s-contact">
 
         <div class="overlay"></div>
@@ -103,15 +113,9 @@
         </div> <!-- end contact-content -->
 
     </section>
-    <script>
-        document.getElementById("toggleButton").addEventListener("click", function() {
-      var menu = document.getElementById("menu");
-      if (menu.style.display === "none") {
-        menu.style.display = "flex";
-      } else {
-        menu.style.display = "none";
-      }
-    });
-    </script>
+
+    <script src="js/menu.js"></script>
+    <script src="Js/JSNav.js"></script>
+    <script src="Pagina.js"></script>
 </body>
 </html>

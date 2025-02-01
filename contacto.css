@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
 body{
     margin: 0;
     padding: 0;
@@ -37,7 +37,7 @@ html, body {
 
 body {
     background: #111111;
-    font-family: "lora-regular", serif;
+    font-family: "DM Sans", sans-serif;
     font-size: 1.7rem;
     font-style: normal;
     font-weight: normal;
@@ -48,124 +48,13 @@ body {
 }
 
 /**/
-.nav {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 30px;
-}
 
-.nav__tittle{
-    font-weight: 300;
-    margin-left: 130px;
-
-}
-
-.nav__link{
-    margin-left: auto;
-    padding: 0;
-    display: grid;
-    grid-auto-flow: column;
-    grid-auto-columns: max-content;
-    gap: 2em;
-}
-
-.nav__items{
-    list-style: none;
-}
-
-
-.nav_links{
-    color: #fff;
-    text-decoration: none;
-    font-family: "montserrat-light", sans-serif;
-}
-
-.nav__menu{
-    margin-left: auto;
-    cursor: pointer;
-    display: none;
-}
-
-.nav__img{
-    display: block;
-    width: 30px;
-}
-
-.nav__close{
-    display: var(--show, none);
-}
-
-.logo__tittle {
-    position: relative;
-    display: flex;
-    background: rgba(255, 255, 255, 0.49);
-    padding: 3rem 1rem;
-    clip-path: polygon(0 0, 0 95%, 50% 81%, 120% 100%, 100% 0);
-    z-index: 14;
-}
-
-.logo__tittle img{
-    width: 7rem;
-}
-@media (max-width:600px){
-    .nav_links{
-          display: none;
-      } 
-      .nav__menu {
-          margin-left: auto;
-          cursor: pointer;
-          display: flex;
-          position: absolute;
-          right: 2rem;
-          top: 2rem;
-      }
-  
-  }
-  #menu a {
-    text-decoration: none;
-    color: white;
-    font-size: 2rem;
-    padding: 0 0 0 4rem;
-    z-index: 14;
-    font-family: 'Poppins', sans-serif;
-
-}
-.menu {
-    display: none;
-    background: #010101ed;
-    border: transparent;
-    width: 100svw;
-    height: 100svh;
-    position: fixed;
-    top: 0;
-    flex-direction: column;
-    align-items: center;
-    color: white;
-    justify-content: center;
-    gap: 21px;
-    align-items: flex-start;
-    padding-top: 17rem;
-    z-index: 10;
-}
-  #toggleButton{
-      display: none;
-      background: transparent;
-    border: transparent;
-    z-index: 10;
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-    z-index: 14;
-  }
-  @media (max-width:600px){
-      #toggleButton{
-          display: flex;
-      }
-  }
 /* ------------------------------------------------------------------- 
  * ## links
  * ------------------------------------------------------------------- */
+ .row.section-header.aos-init.aos-animate {
+    margin-top: 17rem;
+}
 a {
     color: #0087cc;
     -webkit-transition: all 0.3s ease-in-out;
