@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admisiones - Colegio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="Menu.css">
+</head>
+<body>
+    <style>/* Estilos generales */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+       
+        
+        section {
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        h2 {
+            font-size: 2rem;
+            text-align: center;
+            margin-bottom: 40px;
+            color: #0073e6;
+        }
+        
+        /* Proceso de Admisión */
+        .pasos {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        
+        .paso {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            flex: 1 1 300px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .paso:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        
+        .paso i {
+            font-size: 2.5rem;
+            color: #0073e6;
+            margin-bottom: 15px;
+        }
+        
+        .paso h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+        
+        .paso p {
+            font-size: 1rem;
+            color: #555;
+        }
+        
+        /* Requisitos */
+        .requisitos-lista {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        
+        .requisitos-lista ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .requisitos-lista li {
+            font-size: 1.1rem;
+            margin: 10px 0;
+        }
+        
+        .btn-descarga {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background: #0073e6;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
+        
+        .btn-descarga:hover {
+            background: #005bb5;
+        }
+        
+        /* Fechas Importantes */
+        .calendario {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        
+        .evento {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            flex: 1 1 300px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .evento:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        
+        .evento h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: #0073e6;
+        }
+        
+        .evento p {
+            font-size: 1.1rem;
+            color: #555;
+        }
+        
+        /* Footer */
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .pasos, .calendario {
+                flex-direction: column;
+                align-items: center;
+            }
+        
+            .paso, .evento {
+                flex: 1 1 100%;
+                max-width: 80%;
+            }
+        }</style>
+             <header>
+                <div class="img-container">
+                  <img src="./Img/LOGO.png" alt="" srcset="" />
+                </div>
+          
+                <div>
+                  <button id="toggleButton">
+                    <img src="./img/menu.png" class="nav_img" />
+                  </button>
+          
+                  <ul id="menu" style="display: none" class="menu">
+                    <a href="./index.html">Inicio</a>
+                    <a href="./historia.html">Sobre nosotros</a>
+                    <a href="./Galery.html">Galeria</a>
+                    <a href="./contact.html">Contacto</a>
+                    <a href="./Formu.html">Admisión</a>
+                  </ul>
+                </div>
+                <div class="links-container">
+                  <a href="./index.html">Inicio</a>
+                  <a href="./historia.html">Sobre nosotros</a>
+                  <a href="./Galery.html">Galeria</a>
+                  <a href="./contact.html">Contacto</a>
+                  <a href="./Formu.html">Admisión</a>
+                </div>
+              </header>
+
+        <h1>Admisiones</h1>
+        <p>Bienvenido al proceso de admisión para el año escolar 2024-2025.</p>
+    
+
+    <section class="proceso-admision">
+        <h2>Proceso de Admisión</h2>
+        <div class="pasos">
+            <div class="paso">
+                <i class="fas fa-file-alt"></i>
+                <h3>Paso 1: Registro</h3>
+                <p>Completa el formulario de inscripción en línea.</p>
+            </div>
+            <div class="paso">
+                <i class="fas fa-calendar-check"></i>
+                <h3>Paso 2: Entrevista</h3>
+                <p>Programa una entrevista con el equipo de admisiones.</p>
+            </div>
+            <div class="paso">
+                <i class="fas fa-check-circle"></i>
+                <h3>Paso 3: Confirmación</h3>
+                <p>Recibe la confirmación de tu admisión.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="requisitos">
+        <h2>Requisitos y Formularios</h2>
+        <div class="requisitos-lista">
+            <ul>
+                <li>Formulario de inscripción completado.</li>
+                <li>Certificado de notas del año anterior.</li>
+                <li>Fotocopia de la cédula del estudiante y representante.</li>
+                <li>2 fotos tamaño carnet.</li>
+            </ul>
+            <a href="#" class="btn-descarga">Descargar Formulario</a>
+        </div>
+    </section>
+
+    <section class="fechas">
+        <h2>Fechas Importantes</h2>
+        <div class="calendario">
+            <div class="evento">
+                <h3>Inicio de Inscripciones</h3>
+                <p>15 de Enero, 2024</p>
+            </div>
+            <div class="evento">
+                <h3>Cierre de Inscripciones</h3>
+                <p>30 de Marzo, 2024</p>
+            </div>
+            <div class="evento">
+                <h3>Publicación de Resultados</h3>
+                <p>15 de Abril, 2024</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Colegio Ejemplo. Todos los derechos reservados.</p>
+    </footer>
+   
+    <script src="scripts.js"></script>
+    
+    <script src="js/menu.js"></script>
+    <script src="Js/JSNav.js"></script>
+
+    <script src="Pagina.js"></script>
+</body>
+</html>
